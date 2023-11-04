@@ -7,12 +7,12 @@
 
 - name: Install java
   action: >
-    {{ ansible_pkg_mgr }} name={{ java_package[ansible_distribution] }} state=present
+    {{ pkg_mgr[ansible_distribution] }} name={{ java_package[ansible_distribution] }} state=present
   tags:
     - init
 
 - name: Install nginx
   action: >
-    {{ ansible_pkg_mgr }} name={{ nginx_package[ansible_distribution] }} state=present
+    {{ pkg_mgr[ansible_distribution] }} name={{ nginx_package[ansible_distribution] }} state=present
   tags:
     - init

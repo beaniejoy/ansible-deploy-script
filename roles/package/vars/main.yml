@@ -1,3 +1,7 @@
+pkg_mgr:
+  Amazon: dnf
+  Debian: apt
+
 java_package:
   Amazon: java-17-amazon-corretto
   Debian: openjdk-17-jre
