@@ -1,6 +1,6 @@
 ---
 - name: "Deploy service-api({{ spring_profile }})"
-  hosts: rasp_pi
+  hosts: ec2
   become: true
   vars_files:
     - group_vars/all.yml
